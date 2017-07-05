@@ -5,4 +5,5 @@
     <string name="warn">Warn</string>
     <string name="error">Error</string>
     <string name="reminder">Reminder</string>
+    <string name="html">Parse as HTML</string>
 </resources>
