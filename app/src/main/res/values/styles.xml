@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TopMessageDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/TopMessageDialogAnimation</item>
+    </style>
+
+    <style name="TopMessageDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_from_top</item>
+        <item name="android:windowExitAnimation">@anim/translate_to_top</item>
+    </style>
 </resources>
