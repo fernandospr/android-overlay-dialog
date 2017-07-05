@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OverlayDialogSample</string>
+    <string name="hint">Write a message</string>
+    <string name="info">Info</string>
+    <string name="warn">Warn</string>
+    <string name="error">Error</string>
+    <string name="reminder">Reminder</string>
 </resources>

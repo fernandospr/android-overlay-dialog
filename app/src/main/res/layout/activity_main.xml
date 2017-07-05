@@ -4,11 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.github.fernandospr.overlaydialogsample.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:hint="@string/hint" />
+
+    <Button
+        android:id="@+id/bInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info" />
+
+    <Button
+        android:id="@+id/bWarn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warn" />
+
+    <Button
+        android:id="@+id/bError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error" />
+
+    <Button
+        android:id="@+id/bReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder" />
 
 </LinearLayout>
