@@ -34,7 +34,7 @@ public class OverlayDialogFactory {
     public static OverlayDialog buildWarnDialog(@NonNull View root,
                                                 @Nullable CharSequence text,
                                                 @NonNull MessageDialogStyle style) {
-        return buildDialog(root, text, style, R.layout.message_error);
+        return buildDialog(root, text, style, R.layout.message_warn);
     }
 
     @NonNull
