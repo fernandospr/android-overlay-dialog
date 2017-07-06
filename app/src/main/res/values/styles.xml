@@ -16,4 +16,13 @@
         <item name="android:windowEnterAnimation">@anim/translate_from_top</item>
         <item name="android:windowExitAnimation">@anim/translate_to_top</item>
     </style>
+
+    <style name="LeftToRightMessageDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/LeftToRightMessageDialogAnimation</item>
+    </style>
+
+    <style name="LeftToRightMessageDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_from_left</item>
+        <item name="android:windowExitAnimation">@anim/translate_to_right</item>
+    </style>
 </resources>
