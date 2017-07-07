@@ -17,39 +17,39 @@ public class OverlayDialogFactory {
     }
 
     @NonNull
-    public static OverlayDialog buildInfoDialog(@NonNull View root,
+    public static OverlayDialog buildInfoDialog(@NonNull ViewGroup root,
                                                 @Nullable CharSequence text,
                                                 @NonNull MessageDialogStyle style) {
         return buildDialog(root, text, style, R.layout.message_info);
     }
 
     @NonNull
-    public static OverlayDialog buildErrorDialog(@NonNull View root,
+    public static OverlayDialog buildErrorDialog(@NonNull ViewGroup root,
                                                  @Nullable CharSequence text,
                                                  @NonNull MessageDialogStyle style) {
         return buildDialog(root, text, style, R.layout.message_error);
     }
 
     @NonNull
-    public static OverlayDialog buildWarnDialog(@NonNull View root,
+    public static OverlayDialog buildWarnDialog(@NonNull ViewGroup root,
                                                 @Nullable CharSequence text,
                                                 @NonNull MessageDialogStyle style) {
         return buildDialog(root, text, style, R.layout.message_warn);
     }
 
     @NonNull
-    public static OverlayDialog buildReminderDialog(@NonNull View root,
+    public static OverlayDialog buildReminderDialog(@NonNull ViewGroup root,
                                                     @Nullable CharSequence text,
                                                     @NonNull MessageDialogStyle style) {
         return buildDialog(root, text, style, R.layout.message_reminder);
     }
 
     @NonNull
-    private static OverlayDialog buildDialog(@NonNull View root,
+    private static OverlayDialog buildDialog(@NonNull ViewGroup root,
                                              @Nullable CharSequence text,
                                              @NonNull MessageDialogStyle style,
                                              @LayoutRes int layoutResID) {
-        View view = LayoutInflater.from(root.getContext()).inflate(layoutResID, (ViewGroup) root, false);
+        View view = LayoutInflater.from(root.getContext()).inflate(layoutResID, root, false);
         TextView title = (TextView) view.findViewById(R.id.title);
         title.setText(text);
         OverlayDialog dialog = new OverlayDialog(root.getContext(), style.value);
