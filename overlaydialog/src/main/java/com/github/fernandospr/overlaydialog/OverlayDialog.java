@@ -6,10 +6,6 @@ import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.StyleRes;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,17 +22,17 @@ public class OverlayDialog extends Dialog {
         }
     };
 
-    public OverlayDialog(@NonNull Context context) {
+    public OverlayDialog(Context context) {
         super(context);
         init();
     }
 
-    public OverlayDialog(@NonNull Context context, @StyleRes int themeResId) {
+    public OverlayDialog(Context context, int themeResId) {
         super(context, themeResId);
         init();
     }
 
-    protected OverlayDialog(@NonNull Context context, boolean cancelable, @Nullable OnCancelListener cancelListener) {
+    protected OverlayDialog(Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
         init();
     }
@@ -54,25 +50,25 @@ public class OverlayDialog extends Dialog {
     }
 
     @Override
-    public void setContentView(@NonNull View view) {
+    public void setContentView(View view) {
         super.setContentView(view);
         setupLayout();
     }
 
     @Override
-    public void setContentView(@LayoutRes int layoutResID) {
+    public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
         setupLayout();
     }
 
     @Override
-    public void setContentView(@NonNull View view, @Nullable ViewGroup.LayoutParams params) {
+    public void setContentView(View view, ViewGroup.LayoutParams params) {
         super.setContentView(view, params);
         setupLayout();
     }
 
     @Override
-    public void addContentView(@NonNull View view, @Nullable ViewGroup.LayoutParams params) {
+    public void addContentView(View view, ViewGroup.LayoutParams params) {
         super.addContentView(view, params);
         setupLayout();
     }
@@ -103,7 +99,7 @@ public class OverlayDialog extends Dialog {
     }
 
     @Override
-    public void setOnDismissListener(@Nullable final OnDismissListener listener) {
+    public void setOnDismissListener(final OnDismissListener listener) {
         super.setOnDismissListener(new OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialogInterface) {
