@@ -1,3 +1,5 @@
+.idea/misc.xml
+.idea/vcs.xml
 *.iml
 app/app.iml
 overlaydialog/overlaydialog.iml
