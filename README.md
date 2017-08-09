@@ -1,5 +1,5 @@
 # android-overlay-dialog
-A customizable dialog shown on top of the window
+A customizable dialog shown on top of the window. Useful for showing info/error messages.
 
 ## Sample app
 
