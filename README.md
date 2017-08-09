@@ -15,11 +15,17 @@ compile 'com.github.fernandospr:overlaydialog:1.0.1'
 ```
 OverlayDialog dialog = new OverlayDialog(this);
 dialog.setCancelable(true);
-dialog.setContentView(customView);
 ...
 dialog.show();
 ...
 dialog.dismiss();
+```
+
+To customize the view for the dialog, you should use:
+```
+View customView = LayoutInflater.from(this).inflate(layoutResID, root, false);
+...
+dialog.setContentView(customView);
 ```
 
 To customize the auto dismiss time, you should use:
