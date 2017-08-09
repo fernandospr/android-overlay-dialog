@@ -32,7 +32,7 @@ To customize the enter/exit animations, you should create a theme and set it in 
 OverlayDialog dialog = new OverlayDialog(this, R.style.TopMessageDialog);
 ```
 
-res/values/styles.xml
+* res/values/styles.xml
 ```
 <style name="TopMessageDialog" parent="Theme.AppCompat.Dialog">
     <item name="android:windowAnimationStyle">@style/TopMessageDialogAnimation</item>
@@ -44,7 +44,7 @@ res/values/styles.xml
 </style>
 ```
 
-res/anim/translate_from_top.xml
+* res/anim/translate_from_top.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
@@ -58,7 +58,7 @@ res/anim/translate_from_top.xml
 </set>
 ```
 
-res/anim/translate_to_top.xml
+* res/anim/translate_to_top.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
